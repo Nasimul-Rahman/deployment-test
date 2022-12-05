@@ -1,0 +1,28 @@
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.navbar-hyperlinks {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px;
+}
+
+.navbar-hyperlinks a {
+  margin: 10px;
+  font-size: 23px;
+}
+
+.navbar-logo {
+  margin: 20px;
+}
+
+.navbar-logo-img {
+  width: 150px;
+}

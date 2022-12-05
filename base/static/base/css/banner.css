@@ -1,0 +1,15 @@
+@import 'navbar.css';
+
+.banner {
+  color: red;
+
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  background: linear-gradient(90deg, rgba(0,0,0,0.29735644257703087) 100%, rgba(36,33,33,0.30015756302521013) 100%), url("/static/base/media/banner-img.jpg");
+}
