@@ -9,4 +9,51 @@
 
 .aboutme-description {
   width: 370px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme-description h2 {
+  font-size: 50px;
+  margin: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #655d4c;
+}
+
+.aboutme-description h5 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #655d4c;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aboutme-description p {
+  text-align: center;
+  color: #655d4c;
+  margin-bottom: 20px;
+}
+
+.aboutme-description-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: solid 2px #655d4c;
+  color: #655d4c;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.aboutme-description-btn:hover {
+  background-color: #655d4c;
+  color: white;
 }

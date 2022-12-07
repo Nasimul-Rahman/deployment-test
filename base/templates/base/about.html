@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  {% load static %}
+{% load static %}
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +8,30 @@
   </head>
   <body>
 
-    <div class="banner">
+    <div class="banner-about">
       <div class="navbar">
         <div class="navbar-logo">
-          <img class="navbar-logo-img" src="{% static 'base/media/nbnj-logo-small.png' %}" alt="">
+          <img class="navbar-logo-img" src="{% static 'base/media/nbnj-logo-small.png' %}" alt="NBNJ Limited">
         </div>
         <div class="navbar-hyperlinks">
-            <a class='navbar-hyperlinks-active' href="{% url 'home' %}">HOME</a>
-            <a class='navbar-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
+            <a class='navbar-hyperlinks-inactive' href="{% url 'home' %}">HOME</a>
+            <a class='navbar-hyperlinks-active' href="{% url 'about' %}">ABOUT</a>
             <a class='navbar-hyperlinks-inactive' href="">PROJECTS</a>
             <a class='navbar-hyperlinks-inactive' href="">CONTACT</a>
         </div>
       </div>
+      <h2 class="title">ABOUT THE COMPANY</h2>
+    </div>
+
+    <div class="goal">
+      <div class="aboutme-description">
+        <h2>GOAL</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
+      </div>
+    </div>
+
+    <div class="staff">
     </div>
 
     <div class="aboutme">
@@ -31,10 +40,9 @@
       </div>
       <div class="aboutme-description">
         <h2>ABOUT</h2>
-        <img src="{% static 'base/media/sep.png' %}" alt="">
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h5>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h4>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
-        <a class="aboutme-description-btn" href="{% url 'about' %}">MORE</a>
+        <a href="#">MORE</a>
       </div>
     </div>
 
