@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}">
-    <title>NBNJ</title>
+    <title>NBNJ Limited - Modern Real Estate Company in Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'base/media/nbnj-logo-small.png' %}">
   </head>
   <body>
 
@@ -62,6 +63,12 @@
         for (let i = 0; i < 3; i++) {
           header_links_inactive[i].classList.toggle('inactive-underline', window.scrollY)
         }
+      })
+
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener('load', function(){
+        loader.style.display = "none"
       })
     </script>
   </body>

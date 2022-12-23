@@ -12,6 +12,8 @@
   </head>
   <body>
 
+    <div id="preloader"></div>
+
     <div class="banner">
       <div class="navbar">
         <div class="navbar-logo">
@@ -56,6 +58,14 @@
           header_links_inactive[i].classList.toggle('inactive-underline', window.scrollY)
         }
       })
+
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener('load', function(){
+        loader.style.display = "none"
+      })
+
+
     </script>
   </body>
 
