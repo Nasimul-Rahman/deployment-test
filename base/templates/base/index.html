@@ -17,7 +17,6 @@
     <div class="banner">
       <div class="navbar">
         <div class="navbar-logo">
-          <img class="navbar-logo-img" src="{% static 'base/media/nbnj-logo-small.png' %}" alt="">
         </div>
         <div class="navbar-hyperlinks">
             <a class='navbar-hyperlinks-active' href="{% url 'home' %}">HOME</a>
@@ -48,7 +47,7 @@
     <script>
       window.addEventListener('scroll', function() {
         var header = document.querySelector('.navbar');
-        var header_logo = document.querySelector('.navbar-logo-img')
+        var header_logo = document.querySelector('.navbar-logo')
         var header_links_active = document.querySelector('.navbar-hyperlinks-active')
         var header_links_inactive = document.querySelectorAll('.navbar-hyperlinks-inactive')
         header.classList.toggle('sticky', window.scrollY)
