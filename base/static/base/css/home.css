@@ -3,6 +3,7 @@
   height: 800px;
 
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -65,4 +66,13 @@
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+@media (max-width: 480px) {
+  .aboutme {
+    flex-direction: column;
+  }
+  .aboutme-collage {
+    display: none;
+  }
 }

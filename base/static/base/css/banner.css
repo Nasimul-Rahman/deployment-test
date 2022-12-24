@@ -16,12 +16,6 @@
   transition: 180s;
 
   animation: animate 20s linear infinite;
-  /* animation-direction: reverse;
-  animation-duration: 60s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out; */
 }
 
 .banner-about {

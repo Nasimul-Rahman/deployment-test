@@ -73,3 +73,33 @@
 .inactive-underline:hover {
   border-bottom: solid 4px white;
 }
+
+.navbar-hamburger {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    background-image: url("/static/base/media/logo_3.png");
+    margin: 0px;
+    background-size: 75%;
+  }
+  .navbar-hyperlinks {
+    display: none;
+  }
+  .navbar-hamburger {
+    display: block;
+    margin: 30px;
+    height: 30px;
+    width: 30px;
+    background-image: url("/static/base/media/hamburger.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .navbar-hamburger img {
+    height: 30px;
+    width: 30px;
+  }
+}

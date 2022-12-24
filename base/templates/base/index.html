@@ -14,35 +14,38 @@
 
     <div id="preloader"></div>
 
-    <div class="banner">
-      <div class="navbar">
-        <div class="navbar-logo">
+    <div class="container">
+      <div class="banner">
+        <div class="navbar">
+          <div class="navbar-logo"></div>
+          <div class="navbar-hyperlinks">
+              <a class='navbar-hyperlinks-active' href="{% url 'home' %}">HOME</a>
+              <a class='navbar-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
+              <a class='navbar-hyperlinks-inactive' href="">PROJECTS</a>
+              <a class='navbar-hyperlinks-inactive' href="">CONTACT</a>
+          </div>
+          <div class="navbar-hamburger"></div>
         </div>
-        <div class="navbar-hyperlinks">
-            <a class='navbar-hyperlinks-active' href="{% url 'home' %}">HOME</a>
-            <a class='navbar-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
-            <a class='navbar-hyperlinks-inactive' href="">PROJECTS</a>
-            <a class='navbar-hyperlinks-inactive' href="">CONTACT</a>
+      </div>
+
+      <div class="aboutme">
+        <div class="aboutme-collage">
+          <img class="aboutme-collage-img" src="{% static 'base/media/home-aboutme.jpg' %}" alt="">
+        </div>
+        <div class="aboutme-description">
+          <h2>ABOUT</h2>
+          <img src="{% static 'base/media/sep.png' %}" alt="">
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h5>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
+          <a class="aboutme-description-btn" href="{% url 'about' %}">MORE</a>
         </div>
       </div>
-    </div>
 
-    <div class="aboutme">
-      <div class="aboutme-collage">
-        <img class="aboutme-collage-img" src="{% static 'base/media/home-aboutme.jpg' %}" alt="">
-      </div>
-      <div class="aboutme-description">
-        <h2>ABOUT</h2>
-        <img src="{% static 'base/media/sep.png' %}" alt="">
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h5>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
-        <a class="aboutme-description-btn" href="{% url 'about' %}">MORE</a>
-      </div>
-    </div>
+      <footer>
+        <p>© 2022 NBNJ Limited | All Rights Reserved</p>
+      </footer>
 
-    <footer>
-      <p>© 2022 NBNJ Limited | All Rights Reserved</p>
-    </footer>
+    </div>
 
     <script>
       window.addEventListener('scroll', function() {
