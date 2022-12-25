@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e8ced63ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}">
     <title>NBNJ Limited - Modern Real Estate Company in Bangladesh</title>
     <link rel="icon" type="image/x-icon" href="{% static 'base/media/nbnj-logo-small.png' %}">
@@ -13,6 +14,16 @@
   <body>
 
     <div id="preloader"></div>
+
+    <div class="mobile-nav">
+      <div class="mobile-nav-hyperlinks">
+        <a class='navbar-hyperlinks-x' href='#'><i class="fa-solid fa-x"></i></a>
+        <a class='mobile-nav-hyperlinks-active' href="{% url 'home' %}">HOME</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="">PROJECTS</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="">CONTACT</a>
+      </div>
+    </div>
 
     <div class="container">
       <div class="banner">
@@ -65,6 +76,20 @@
 
       window.addEventListener('load', function(){
         loader.style.display = "none"
+      })
+
+      var hamburger = document.querySelector('.navbar-hamburger')
+
+      hamburger.addEventListener('click', function() {
+        var mobileNav = document.querySelector('.mobile-nav').classList.add('mobile-nav-active')
+        console.log('working')
+      })
+
+      var mobileNavX = document.querySelector('.navbar-hyperlinks-x')
+
+      mobileNavX.addEventListener('click', function() {
+        var mobileNav = document.querySelector('.mobile-nav').classList.remove('mobile-nav-active')
+        console.log('working')
       })
 
 
